@@ -3,7 +3,7 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Header } from "./Header";
 import { Navigation } from "./Navigation";
 
-import Home from "./Home";
+import { Home } from "./Home";
 import { Resume } from "./Resume";
 import Blog from "./Blog";
 import Contact from "./Contact";

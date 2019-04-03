@@ -5,10 +5,14 @@ html {
   -moz-box-shadow: inset 0px 0px 0px 3px white;
   box-shadow: inset 0px 0px 0px 3px white;
 }
-
+a {
+  color: white;
+}
 #App {
   width: 100vw;
   height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 nav {
   display: flex;
@@ -22,8 +26,10 @@ nav {
   height: 7vh;
 }
 nav a {
-  color: white;
   text-decoration: none;
+}
+.activePage {
+  text-decoration: underline;
 }
 header h1 {
   padding-left: 5vh;
@@ -36,9 +42,28 @@ main {
   align-items: center;
 }
 
-#Contact form {
+section {
+  width: 70vw;
+}
+
+#Contact > form {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+#Contact > form > textarea,
+input {
+  width: 60vw;
+}
+
+@media only screen and (min-width: 1000px) {
+  section {
+    width: 40vw;
+  }
+  #Contact > form > textarea,
+  input {
+    width: 30vw;
+  }
 }
