@@ -4,9 +4,7 @@ import "./App.css";
 
 class Home extends Component {
   render() {
-    return <div id="Home">
-        I am a Fullstack Engineer focused on learning.
-    </div>;
+    return <div id="Home">I am a Fullstack Engineer focused on learning.</div>;
   }
 }
 

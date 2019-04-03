@@ -4,6 +4,9 @@ import { Header } from "./Header";
 import { Navigation } from "./Navigation";
 
 import Home from "./Home";
+import { Resume } from "./Resume";
+import Blog from "./Blog";
+import Contact from "./Contact";
 
 import "./App.css";
 
@@ -17,6 +20,9 @@ class App extends Component {
           <main>
             <Switch>
               <Route path="/" exact component={Home} />
+              <Route path="/Resume" exact component={Resume} />
+              <Route path="/Blog" exact component={Blog} />
+              <Route path="/Contact" exact component={Contact} />
             </Switch>
           </main>
         </BrowserRouter>

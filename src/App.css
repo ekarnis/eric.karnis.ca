@@ -1,24 +1,23 @@
 html {
   background-color: #19082c;
   color: white;
-  -webkit-box-shadow:inset 0px 0px 0px 3px white;
-  -moz-box-shadow:inset 0px 0px 0px 3px white;
-  box-shadow:inset 0px 0px 0px 3px white;
+  -webkit-box-shadow: inset 0px 0px 0px 3px white;
+  -moz-box-shadow: inset 0px 0px 0px 3px white;
+  box-shadow: inset 0px 0px 0px 3px white;
 }
 
 #App {
   width: 100vw;
   height: 100vh;
-  
 }
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  -webkit-box-shadow:inset 0px 0px 0px 3px white;
-  -moz-box-shadow:inset 0px 0px 0px 3px white;
-  box-shadow:inset 0px 0px 0px 3px white;
+  -webkit-box-shadow: inset 0px 0px 0px 3px white;
+  -moz-box-shadow: inset 0px 0px 0px 3px white;
+  box-shadow: inset 0px 0px 0px 3px white;
   width: 100vw;
   height: 7vh;
 }
@@ -26,13 +25,20 @@ nav a {
   color: white;
   text-decoration: none;
 }
-header h1{ 
+header h1 {
   padding-left: 5vh;
 }
 
-main{
+main {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#Contact form {
+  display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
