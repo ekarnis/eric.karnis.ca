@@ -8,16 +8,34 @@ export const Navigation = props => {
       <NavLink to="/" activeClassName="activePage" exact>
         Home
       </NavLink>
-      <NavLink to="/Resume" activeClassName="activePage" exact>
+      <NavLink to="/resume" activeClassName="activePage" exact>
         Resume
       </NavLink>
-      <NavLink to="/Blog" activeClassName="activePage" exact>
+      <NavLink to="/blog" activeClassName="activePage" exact>
         Blog
       </NavLink>
-      <a href="https://www.flickr.com/erickarnis">Photography</a>
-      <a href="https://github.com/ekarnis">Github</a>
-      <a href="https://github.com/ekarnis/eric.karnis.ca">Source</a>
-      <NavLink to="/Contact" activeClassName="activePage" exact>
+      <a
+        href="https://www.flickr.com/people/erickarnis/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Photography
+      </a>
+      <a
+        href="https://github.com/ekarnis"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Github
+      </a>
+      <a
+        href="https://github.com/ekarnis/eric.karnis.ca"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Source
+      </a>
+      <NavLink to="/contact" activeClassName="activePage" exact>
         Contact
       </NavLink>
       <div />

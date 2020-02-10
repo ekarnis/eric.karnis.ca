@@ -141,6 +141,9 @@ export const Resume = props => {
             in the class.
           </li>
         </ul>
+      </section>
+      <section>
+        <h2>Certifications</h2>
         <p>
           <b>eLearnSecurity Junior Penetration Tester</b>– Ryerson University,
           Toronto, ON, 2018
