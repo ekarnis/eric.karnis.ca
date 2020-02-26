@@ -1,60 +1,99 @@
 <script>
-	export let segment;
+  export let segment;
 </script>
 
 <style>
-	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
-	}
-
-	ul {
-		margin: 0;
-		padding: 0;
-	}
-
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
-	li {
-		display: block;
-		float: left;
-	}
-
-	[aria-current] {
-		position: relative;
-		display: inline-block;
-	}
-
-	[aria-current]::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 1em);
-		height: 2px;
-		background-color: rgb(255,62,0);
-		display: block;
-		bottom: -1px;
-	}
-
-	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
-		display: block;
-	}
+  [aria-current]::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 1em);
+    height: 2px;
+    background-color: rgb(255, 62, 0);
+    display: block;
+    bottom: -1px;
+    left: 8px;
+  }
+  nav {
+    max-height: 10vh;
+    height: 10vh;
+  }
+  h1 {
+    font-family: "Righteous";
+  }
+  .is-outgoing-link {
+    text-decoration: underline;
+  }
 </style>
 
-<nav>
-	<ul>
-		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
-		<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <h1 class="title is-1">Eric Karnis</h1>
+    </a>
 
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+    <button
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample">
+      <span aria-hidden="true" />
+      <span aria-hidden="true" />
+      <span aria-hidden="true" />
+    </button>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <a
+        class="navbar-item"
+        aria-current={segment === undefined ? 'page' : undefined}
+        href=".">
+        <h5 class="title is-5">home</h5>
+      </a>
+
+      <a
+        class="navbar-item"
+        aria-current={segment === 'about' ? 'page' : undefined}
+        href="about">
+        <h5 class="title is-5">about</h5>
+      </a>
+
+      <a
+        class="navbar-item"
+        aria-current={segment === 'resume' ? 'page' : undefined}
+        href="resume">
+        <h5 class="title is-5">resume</h5>
+      </a>
+
+      <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>blog</a></li>
-	</ul>
+
+      <a
+        class="navbar-item"
+        rel="prefetch"
+        aria-current={segment === 'blog' ? 'page' : undefined}
+        href="blog">
+        <h5 class="title is-5">blog</h5>
+      </a>
+
+      <a
+        class="navbar-item is-outgoing-link"
+        href="https://www.flickr.com/people/erickarnis/">
+        <h5 class="title is-5">flickr</h5>
+      </a>
+
+      <a class="navbar-item is-outgoing-link" href="https://github.com/ekarnis">
+        <h5 class="title is-5">github</h5>
+      </a>
+
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a class="button is-dark is-large" href="contact">
+          <strong>Contact</strong>
+        </a>
+      </div>
+    </div>
+  </div>
 </nav>
