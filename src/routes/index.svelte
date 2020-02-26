@@ -19,5 +19,5 @@
 </svelte:head>
 
 <div>
-  <img src="yellowstone.jpg" alt="" />
+  <img src="not-a-race.jpg" alt="" />
 </div>

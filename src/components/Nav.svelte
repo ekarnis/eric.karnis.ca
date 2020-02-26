@@ -10,22 +10,28 @@
     height: 2px;
     background-color: rgb(255, 62, 0);
     display: block;
-    bottom: -1px;
-    left: 8px;
+    bottom: 20px;
+    left: 9px;
   }
   nav {
     max-height: 10vh;
     height: 10vh;
+    box-shadow: 0px 1px 10px #999;
   }
   h1 {
     font-family: "Righteous";
   }
+  h1,
+  h5 {
+    color: white;
+  }
+
   .is-outgoing-link {
-    text-decoration: underline;
+    text-decoration: underline blue 2px;
   }
 </style>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
+<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <h1 class="title is-1">Eric Karnis</h1>
@@ -90,7 +96,9 @@
 
     <div class="navbar-end">
       <div class="navbar-item">
-        <a class="button is-dark is-large" href="contact">
+        <a
+          class="button is-light is-large {segment === 'contact' ? 'is-outlined' : ''}"
+          href="contact">
           <strong>Contact</strong>
         </a>
       </div>
