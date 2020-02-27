@@ -66,7 +66,7 @@
       <a
         class="navbar-item"
         aria-current={segment === 'resume' ? 'page' : undefined}
-        href="resume">
+        href="resume/work-experience">
         <h5 class="title is-5">resume</h5>
       </a>
 
