@@ -38,21 +38,14 @@
           certification.
         </p>
         <p>
-          That's also why I will soon be starting the
+          That's also why I am working on the
           <a
             href="https://www.elearnsecurity.com/certification/ecppt/"
             target="_blank"
             rel="noopener noreferrer">
             elearnSecurity Certified Professional Penetration Tester
           </a>
-          and the
-          <a
-            href="https://www.offensive-security.com/information-security-certifications/oscp-offensive-security-certified-professional/"
-            target="_blank"
-            rel="noopener noreferrer">
-            Offensive Security Certified Professional
-          </a>
-          certifications.
+          certification.
         </p>
 
       </div>
@@ -86,6 +79,8 @@
           My highest priority is to find work where I can grow, somewhere I can
           contribute meaningfully both to your company and my career.
         </p>
+        <br />
+        <br />
 
       </div>
     </div>

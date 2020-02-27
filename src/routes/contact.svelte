@@ -65,22 +65,13 @@
             </div>
           </div>
 
-          <div class="field is-horizontal">
-            <div class="field-label">
-              <!-- Left empty for spacing -->
-            </div>
-            <div class="field-body">
-              <div class="field">
-                <div class="control">
-                  <button class="button is-dark">
-                    <strong>Submit</strong>
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div class="buttons is-centered">
+            <button class="button is-dark">
+              <strong>Submit</strong>
+            </button>
           </div>
-        </div>
 
+        </div>
       </div>
     </div>
   </section>

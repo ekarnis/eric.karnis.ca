@@ -10,19 +10,19 @@
     <div class="tabs is-centered">
       <ul>
         <li class="is-active">
-          <a>Work Experience</a>
+          <a href="resume/work-experience">Work Experience</a>
         </li>
         <li>
-          <a>Projects</a>
+          <a href="resume/projects">Projects</a>
         </li>
         <li>
-          <a>Education</a>
+          <a href="resume/education">Education</a>
         </li>
         <li>
-          <a>Certifications</a>
+          <a href="resume/certifications">Certifications</a>
         </li>
         <li>
-          <a>Skills</a>
+          <a href="resume/skills">Skills</a>
         </li>
       </ul>
     </div>

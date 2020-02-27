@@ -19,5 +19,5 @@
 </svelte:head>
 
 <div>
-  <img src="not-a-race.jpg" alt="" />
+  <img class="card" src="not-a-race.jpg" alt="" />
 </div>

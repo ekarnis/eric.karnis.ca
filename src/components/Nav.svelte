@@ -10,7 +10,7 @@
     height: 2px;
     background-color: rgb(255, 62, 0);
     display: block;
-    bottom: 20px;
+    bottom: 30px;
     left: 9px;
   }
   nav {
@@ -25,7 +25,6 @@
   h5 {
     color: white;
   }
-
   .is-outgoing-link {
     text-decoration: underline blue 2px;
   }
@@ -69,6 +68,13 @@
         aria-current={segment === 'resume' ? 'page' : undefined}
         href="resume">
         <h5 class="title is-5">resume</h5>
+      </a>
+
+      <a
+        class="navbar-item"
+        aria-current={segment === 'photos' ? 'page' : undefined}
+        href="photos">
+        <h5 class="title is-5">photos</h5>
       </a>
 
       <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
