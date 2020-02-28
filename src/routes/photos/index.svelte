@@ -24,6 +24,9 @@
     width: 22vw;
     margin: 10;
   }
+  .card:hover {
+    background-color: #ddd;
+  }
   .card:nth-child(-n + 3) {
     margin-bottom: 1.5em;
   }

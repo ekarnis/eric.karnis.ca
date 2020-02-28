@@ -11,6 +11,16 @@
       this.error(res.status, data.message);
     }
   }
+
+  function toggleModal(event) {
+    let modal = document.getElementsByClassName("modal")[0];
+    let modalImage = document.getElementsByClassName("modal-image")[0];
+
+    if (modal.className === "modal") modal.className = "modal is-active";
+    else modal.className = "modal";
+
+    if (event) modalImage.src = event.target.src;
+  }
 </script>
 
 <script>
@@ -26,7 +36,7 @@
     justify-content: center;
   }
   .card {
-    width: 22vw;
+    width: 20vw;
     margin: 10;
   }
   .card:nth-child(-n + 3) {
@@ -38,6 +48,9 @@
   }
   .card:nth-child(5) {
     margin: 0 1.5em;
+  }
+  .modal-content {
+    width: 70vw;
   }
   h1,
   h3 {
@@ -59,7 +72,7 @@
     <div class="card">
       <div class="card-image">
         <figure class="image">
-          <img src={picture.src} alt={picture.name} />
+          <img src={picture.src} alt={picture.name} on:click={toggleModal} />
         </figure>
         <div class="card-content">
           <h3 class="title is-3 has-text-centered">{picture.name}</h3>
@@ -67,5 +80,18 @@
       </div>
     </div>
   {/each}
+
+  <div class="modal">
+    <div class="modal-background" on:click={toggleModal} />
+    <div class="modal-content" on:click={toggleModal}>
+      <figure class="image">
+        <img class="modal-image" alt="Image Popup" />
+      </figure>
+    </div>
+    <button
+      class="modal-close is-large"
+      aria-label="close"
+      on:click={toggleModal} />
+  </div>
 
 </div>
